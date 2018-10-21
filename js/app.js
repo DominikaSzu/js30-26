@@ -3,7 +3,8 @@ const background = document.querySelector('.dropdownBackground');
 const nav = document.querySelector('.top');
 
 function handleEnter(event) {
-    this.classList.add('trigger-enter', 'trigger-enter-active');
+    this.classList.add('trigger-enter');
+    setTimeout(()=> this.classList.add('trigger-enter-active'), 120);
 }
 
 function handleLeave(event) {
